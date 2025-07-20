@@ -1,5 +1,5 @@
 import { ServicesData } from '@/Components/Shared/Consts';
-import Button from '@/Components/UI/Button';
+// import Button from '@/Components/UI/Button';
 import Service from './Service';
 import { useState } from 'react';
 import { SelectedService } from '@/Components/Shared/Types';
@@ -38,9 +38,9 @@ const Services = () => {
               <ListItem key={index} text={text} />
             ))}
           </ul>
-          <div className="lg:ml-5 mt-5">
+          {/* <div className="lg:ml-5 mt-5">
             <Button>Записатись на прийом</Button>
-          </div>
+          </div> */}
         </div>
       </div>
       <Banner1 />
