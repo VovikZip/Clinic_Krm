@@ -4,7 +4,7 @@ import Doctor from './Doctor';
 
 const Doctors = () => {
   return (
-    <SectionWrapper id="doctors">
+    <SectionWrapper id="лікарі">
       <h3 className="text-4xl font-bold text-center mb-20">
         {DoctorsData.heading}
       </h3>

@@ -1,12 +1,21 @@
-import neurology from '@/assets/Images/Icons/Neurology.png';
-import cardiology from '@/assets/Images/Icons/Cardiology.png';
-import orthopedics from '@/assets/Images/Icons/Orthopoedics.png';
-import surgery from '@/assets/Images/Icons/Surgery.png';
-import dentistry from '@/assets/Images/Icons/Dentistry.png';
-import radiology from '@/assets/Images/Icons/Radiology.png';
-import urology from '@/assets/Images/Icons/Urology.png';
-import medicine from '@/assets/Images/Icons/Medicine.png';
-import seeMoreImage from '@/assets/Images/Icons/seeMoreImage.png';
+// import neurology from '@/assets/Images/Icons/Neurology.png';
+// import cardiology from '@/assets/Images/Icons/Cardiology.png';
+// import orthopedics from '@/assets/Images/Icons/Orthopoedics.png';
+// import surgery from '@/assets/Images/Icons/Surgery.png';
+// import dentistry from '@/assets/Images/Icons/Dentistry.png';
+// import radiology from '@/assets/Images/Icons/Radiology.png';
+// import urology from '@/assets/Images/Icons/Urology.png';
+// import medicine from '@/assets/Images/Icons/Medicine.png';
+// import seeMoreImage from '@/assets/Images/Icons/seeMoreImage.png';
+
+
+
+import consultation from '@/assets/Images/Icons/consultation.png';
+import endoscopy from '@/assets/Images/Icons/endoscopy.png';
+import lor from '@/assets/Images/Icons/lor.png';
+import hirurg from '@/assets/Images/Icons/hirurg.png';
+import tweezer from '@/assets/Images/Icons/tweezer.png';
+import catheter from '@/assets/Images/Icons/catheter.png';
 
 import Banner1 from '@/assets/Images/Banner1.png';
 import Banner2 from '@/assets/Images/Banner2.png';
@@ -14,7 +23,6 @@ import Banner2 from '@/assets/Images/Banner2.png';
 import doc1 from '@/assets/Images/Doctors/doc1.png';
 import doc2 from '@/assets/Images/Doctors/doc2.png';
 import doc3 from '@/assets/Images/Doctors/doc3.png';
-import doc4 from '@/assets/Images/Doctors/doc4.png';
 
 import user1 from '@/assets/Images/users/user1.jpg';
 import user2 from '@/assets/Images/users/user2.jpg';
@@ -22,12 +30,12 @@ import user3 from '@/assets/Images/users/user3.jpg';
 
 import logo from '@/assets/Images/logo.png';
 
-export const links = ['Home', 'Doctors', 'Services', 'Reviews'];
+export const links = ['Головна', 'Лікарі', 'Послуги', 'Відгуки', 'Місцезнаходження'];
 
 export const descNums = [
   {
     num: '',
-    text: 'Постійна підтримка пацієнтів',
+    text: 'ЛОР, ЛОР дитячий, ЛОР онколог',
   },
   {
     num: '',
@@ -35,7 +43,7 @@ export const descNums = [
   },
   {
     num: '',
-    text: '15+ Спеціалістів',
+    text: 'Сурдологія',
   },
   {
     num: '',
@@ -47,142 +55,79 @@ export const descNums = [
   },
 ];
 
+
+
 export const ServicesData = [
   {
-    img: neurology,
-    title: 'Аудіологія',
-    id: 'аудіологія',
-    heading: 'Neurology Department',
+    img: consultation,
+    title: 'Консультація ЛОР-лікаря',
+    id: 'консультація-лор-лікаря',
+    heading: 'Консультація ЛОР-лікаря',
     texts: [
-      'Expert neurological consultations',
-      'Comprehensive brain and nerve care',
-      'Advanced neuroimaging services',
-      'Treatment for epilepsy and seizures',
-      'Memory and cognitive assessments',
-      'Pediatric neurology expertise',
-      'Movement disorders management',
+      'Первинний прийом, консультація',
+      'Уважний огляд та опитування',
+      'Встановлення діагнозу',
+      'Призначення індивідуального лікування',
     ],
   },
   {
-    img: cardiology,
-    title: 'Слуховіапарати',
-    id: 'слуховіапарати',
-    heading: 'Cardiology Department',
+    img: endoscopy,
+    title: 'Ендоскопічна діагностика',
+    id: 'ендоскопічна-діагностика',
+    heading: 'Ендоскопія',
     texts: [
-      'Аудіометрія',
-      'Тімпанометрія',
-      'Акустична рефлексометрія',
-      'Підбір слухових апаратів',
-      'Налаштування та сервіс',
-      'Консультація з аудіологом',
-      'Навчання користуванню слуховими апаратами',
-      'Електрофізіологічні тести',
-      'Консультація ЛОР-лікаря',
+      'Дослідження гортані, вуха, носа',
+      'Використання жорстких та гнучких ендоскопів',
+      'Оцінка ступеня розростання аденоїдів',
+      'Вибір оптимального методу лікування',
     ],
   },
   {
-    img: orthopedics,
-    title: 'Хірургія',
-    id: 'хірургія',
-    heading: 'Orthopedics Department',
+    img: lor,
+    title: 'Промивання та очищення',
+    id: 'промивання-та-очищення',
+    heading: 'Очищення ЛОР-органів',
     texts: [
-      'Orthopedic surgery and joint replacements',
-      'Sports injury and trauma care',
-      'Physical therapy and rehabilitation',
-      'Spine and back pain solutions',
-      'Arthritis and joint disorder treatment',
-      'Orthopedic consultations',
-      'Customized orthopedic care plans',
+      'Промивання придаткових пазух носа методом Proetz (“кукушка”)',
+      'Промивання лакун мигдаликів',
+      'Інстиляції ліків в гортань',
+      'Масаж устя слухової труби',
     ],
   },
   {
-    img: surgery,
-    title: 'Реабілітація',
-    id: 'реабілітація',
-    heading: 'Surgery Department',
+    img: hirurg,
+    title: 'Хірургічні маніпуляції',
+    id: 'хірургічні-маніпуляції',
+    heading: 'ЛОР-хірургія',
     texts: [
-      'Minimally invasive and laparoscopic surgery',
-      'Gastrointestinal surgery and endoscopy',
-      'Plastic and reconstructive surgery',
-      'Cancer and tumor resection',
-      'Post-operative care and recovery',
-      'Surgical consultations',
-      'Emergency surgical interventions',
+      'Розкриття фурункулів та абсцесів',
+      'Розтин синехій носової порожнини',
+      'Тимпанопункція',
+      'Парацентез барабанної перетинки',
+      'Мірингопластика',
     ],
   },
   {
-    img: dentistry,
-    title: 'Діагностика',
-    id: 'діагностика',
-    heading: 'Dentistry Department',
+    img: catheter,
+    title: 'Катетеризація та процедури',
+    id: 'катетеризація-та-процедури',
+    heading: 'Інші ЛОР-процедури',
     texts: [
-      'Routine dental check-ups and cleanings',
-      'Cosmetic dentistry and teeth whitening',
-      'Oral surgery and extractions',
-      'Dental implants and restorations',
-      'Pediatric and family dentistry',
-      'Gum disease treatment',
-      'Orthodontic and braces options',
+      'Катетеризація слухової труби',
+      'ПХО ран ЛОР-органів',
+      'Біопсія новоутворень',
+      'Заміна трахеостомічної трубки',
     ],
   },
   {
-    img: radiology,
-    title: 'Лорконсультація',
-    id: 'лорконсультація',
-    heading: 'Radiology Department',
+    img: tweezer,
+    title: 'Видалення сторонніх тіл',
+    id: 'видалення-сторонніх-тіл',
+    heading: 'Видалення сторонніх тіл',
     texts: [
-      'Advanced diagnostic imaging services',
-      'Mammography and breast health screening',
-      'Interventional radiology procedures',
-      'Virtual colonoscopy and body scans',
-      'Radiology consultations',
-      'Fast and accurate imaging results',
-      'State-of-the-art radiology technology',
-    ],
-  },
-  {
-    img: urology,
-    title: 'Логопедія',
-    id: 'логопедія',
-    heading: 'Urology Department',
-    texts: [
-      'Urinary tract and kidney evaluations',
-      'Urologic surgery and stone removal',
-      "Men's and women's urological health",
-      'Prostate and bladder care',
-      'Incontinence and pelvic floor therapy',
-      'Urological consultations',
-      'Comprehensive urology solutions',
-    ],
-  },
-  {
-    img: medicine,
-    title: 'Medicine',
-    id: 'medicine',
-    heading: 'Medicine Department',
-    texts: [
-      'Primary care and internal medicine',
-      'Chronic disease management and prevention',
-      'Immunizations and wellness checks',
-      'Holistic and integrative medicine',
-      'Geriatric and pediatric medicine',
-      'Health education and lifestyle coaching',
-      'Individualized medical treatment plans',
-    ],
-  },
-  {
-    img: seeMoreImage,
-    title: 'See More',
-    id: 'seemore',
-    heading: 'Explore Our Services',
-    texts: [
-      'Explore additional healthcare options',
-      'Specialized medical services for all needs',
-      'Discover a world of medical solutions',
-      'Find the right care for you',
-      'Comprehensive healthcare offerings',
-      'More than meets the eye',
-      'Healthcare beyond expectations',
+      'Витяг сторонніх тіл з носа, вуха, горла',
+      'Безпечне проведення процедури в амбулаторних умовах',
+      'Спостереження після видалення',
     ],
   },
 ];
@@ -192,7 +137,6 @@ export const Banner1Data = {
   texts: [
     'Легкі ЛОР консультації',
     'Фахові спеціалісти ЛОР',
-    'Нічна екстрена допомога 24/7',
     'Доступні ціни на лікування',
     'Просте бронювання запису',
   ],
@@ -203,28 +147,27 @@ export const DoctorsData = {
   heading: 'Наші спеціалісти',
   doctors: [
     {
-      img: doc1,
-      name: 'Dr. John Smith',
-      job: 'Cardiologist',
+      img: doc3,
+      name: 'Мінаєв Олександр Анатолійович ',
+      job: 'лікар - отоларинголог вищої категорії. Обласний отоларинголог - сурдолог, отоларинголог - онколог у Донецькій області. Закінчив Донецький Національний медичний університет. Стаж роботи 43 роки. ',
     },
+    
+    {
+      img: doc1,
+      name: 'Лебедєва Софія Сергіївна ',
+      job: "лікар - отоларинголог. Закінчила Донецький Національний медичний університет. Стаж роботи 3 роки.",
+    },
+    
     {
       img: doc2,
-      name: 'Dr. Kristin Watson',
-      job: 'Dentist',
+      name: 'Долгополов Сергій Олександрович ',
+      job: 'лікар - отоларинголог. Закінчив Донецький Національний медичний університет. Стаж роботи 2 роки. ',
     },
-    {
-      img: doc3,
-      name: 'Dr. Robert Flores',
-      job: 'Surgeon',
-    },
-    {
-      img: doc4,
-      name: 'Dr. Katherine Allen',
-      job: 'Neurologist',
-    },
+    
+    
   ],
-  heading2: 'Хто Ми?',
-  desc: 'Сайт ЛОР клініки — це цифровий майданчик, який об’єднує медичних фахівців, пацієнтів та адміністраторів для оптимізації послуг з догляду за вухами, носом і горлом. Ця інноваційна платформа забезпечує безперебійний зв’язок і координацію між командами, дозволяючи надавати ефективну та персоналізовану допомогу пацієнтам.',
+  heading2: 'Про нас',
+  desc: 'В нашій клініці ведуть прийом лікарі, які уважно Вас вислухають, оглянуть, встановлять вірний діагноз та призначать лікування, яке Вам підходить. Професіональні лікарі виконують безліч маніпуляцій в умовах амбулаторного прийому. Тому, якщо у Вас є скарги, які стосуються ЛОР органів - не зволікайте, звертайтесь до нас. ',
   img: Banner2,
 };
 
@@ -233,29 +176,44 @@ export const FeedbackData = {
   feedbacks: [
     {
       img: user1,
-      name: 'Ralph Edwards',
+      name: 'Уляна Ширяєва',
       job: 'Businessman',
-      desc: 'My experience with this hospital has been great. I highly recommend their services to anyone in need of quility healthcare. they truly prioritize patients care!',
+      desc: 'Доброго дня! Хочу написати слова подяки доктору Мінаєву Олександру Анатолійовичу! так як діти хворіють часто, зверталися до різних лор лікарів. Слава Богу, пошуки хорошого лікаря закінчилися рік тому! Хороша клініка, привітний персонал, лікар Мінаєв професійно підходить до лікування як дорослих, так і дітей! Дуже вдячна за надану допомогу, лікування, розуміння! Більше таких лікарів! Рекомендую!',
     },
     {
       img: user2,
-      name: 'Josh Smith',
-      job: 'Engineer',
-      desc: 'The healthcare professionals were top-natch. they were knowledgeable, attentive, and took the time to answer all of my questions and address my concerns',
+      name: 'Совпель Ірина',
+      job: 'Teacher',
+      desc: "Моє вухо залишилося задоволеним і повністю одужало. Мені сподобалося все, рекомендую. Спокійна атмосфера, доброзичливе та акуратне ставлення. Рекомендую!",
     },
     {
       img: user3,
-      name: 'Eleanor Pena',
-      job: 'Teacher',
-      desc: "One thing that stood out to me was the efficiency of the service, i didn't have to wait long for my appointment, and the entire process was hassle-free experience",
+      name: 'Максим Опалев',
+      job: 'Engineer',
+      desc: "Хочу висловити величезну подяку лікарю Мінаєву Олександру Анатолійовичу.  Прекрасний фахівець, грамотний, коректний, етичний, гнучкий, знає свою справу на вищому рівні. Після звернення, не пошкодував, навпаки - був здивований професіоналізмом! Точна постановка діагнозу, чітко усунув і вирішив усі проблеми, повязані зі здоров'ям! Дуже вдячний! Раджу звертатися.",
+    },
+    
+  ],
+};
+
+
+export const LocationData = {
+  heading: 'Де нас знайти',
+  locations: [
+    {
+      address: '4517 Washington Ave, Manchester, Kentucky 39495',
+      coordinates: [48.72367, 37.56357], // Приклад координат для Manchester, KY
+      phone: '+1 (505) 555-0125',
     },
   ],
 };
 
+
+
 export const FooterData = {
   logo: logo,
-  addresses: ['4517 Washington Ave', 'Manchester, Kentucky 39495'],
-  phone: '+1 (505) 555-0125',
+  addresses: ['м. Краматорськ', 'Олекси Тихого 17'],
+  phone: '+38 (099) 708-95-50',
   departments: [
     'Cardiology',
     'Dentistry',

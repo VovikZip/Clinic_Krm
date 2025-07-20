@@ -9,15 +9,15 @@ import SectionWrapper from '../SectionWrapper';
 
 const Services = () => {
   const [SelectService, setSelectService] = useState<SelectedService>(
-    SelectedService.Cardiology
+    SelectedService.LORConsultation
   );
 
   const selectedServiceData = ServicesData.find(
     (service) => service.id === SelectService
   );
   return (
-    <SectionWrapper id="services">
-      <h2 className="text-4xl font-bold text-center mb-10">Services</h2>
+    <SectionWrapper id="послуги">
+      <h2 className="text-4xl font-bold text-center mb-10">Послуги</h2>
       <div className=" flex flex-col justify-between lg:flex-row gap-10 lg:gap-5">
         <div className="grid grid-cols-3 gap-5">
           {ServicesData?.map((service, index) => (

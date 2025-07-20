@@ -2,6 +2,7 @@ import Home from '@/Components/Main/Home/Home';
 import Services from './Services/Services';
 import Doctors from './Doctors/Doctors';
 import Reviews from './Review/Reviews';
+import MapComp from './Location/MapComp';
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <Services />
       <Doctors />
       <Reviews />
+      <MapComp/>
     </div>
   );
 };
