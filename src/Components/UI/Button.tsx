@@ -27,6 +27,39 @@
 
 // export default Button;
 
+// import * as React from 'react';
+
+// type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+//   variant?: 'primary' | 'secondary' | 'ghost';
+// };
+
+// const base =
+//   'inline-flex items-center justify-center rounded-full px-6 py-3 font-medium transition focus:outline-none focus:ring disabled:opacity-60 disabled:cursor-not-allowed';
+
+// const variants: Record<NonNullable<ButtonProps['variant']>, string> = {
+//   primary: 'bg-blue-600 text-white hover:bg-blue-700',
+//   secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300',
+//   ghost: 'bg-transparent text-blue-600 hover:bg-blue-50',
+// };
+
+// const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+//   ({ variant = 'primary', className = '', children, ...props }, ref) => {
+//     return (
+//       <button
+//         ref={ref}
+//         className={`${base} ${variants[variant]} ${className}`}
+//         {...props} // <- прокидує type, onClick, disabled, etc.
+//       >
+//         {children}
+//       </button>
+//     );
+//   }
+// );
+
+// Button.displayName = 'Button';
+// export default Button;
+
+
 type Props = {
   children: React.ReactNode;
   onClick?: () => void;
